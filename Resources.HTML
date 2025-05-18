@@ -1,0 +1,330 @@
+<html>
+
+
+<head>
+    <title>
+        Prabhav Kanneganti | Resources
+    </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+
+        .header,
+        .hero,
+        .top-section {
+            background-color: steelblue;
+            color: white;
+        }
+
+
+        .header {
+
+
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        .nav-left {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        .nav-right {
+            position: relative;
+            display: flex;
+            align-items: center;
+     
+        }
+
+
+        .nav-right a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size:20px;
+            position: relative;
+              font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        .nav-right a.active-link {
+           
+            border-bottom: 2px solid white;
+        }
+
+
+        .dropdown {
+            position: relative;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: steelblue;
+            min-width: 140px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0.2);
+            z-index: 1;
+            padding: 10px 0;
+        }
+
+
+        .dropdown-content a {
+            display: block;
+            padding: 8px 16px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 60px 40px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+
+        .google-logo {
+            width: 100px;
+            height: auto;
+        }
+
+
+        .hero h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+
+        .hero p {
+            font-size: 16px;
+            color: lightgray;
+        }
+
+
+        .top-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 40px;
+            flex-wrap: wrap;
+        }
+
+
+        .experience,
+        .resources {
+            flex: 1;
+            max-width: 300px;
+        }
+
+
+        .experience h2,
+        .resources h2 {
+            font-size: 24px
+        }
+
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        summary::after {
+            content: "+";
+            font-size: 1.5em;
+        }
+
+
+        details[open] summary::after {
+            content: "-";
+        }
+
+
+        .accordion-content {
+            margin-top: 10px;
+        }
+
+
+        .accordion-content ul {
+            padding-left: 20px;
+
+
+            margin: 0;
+        }
+
+
+        .accordion-content a {
+            color: white;
+            text-decoration: underline;
+            margin: 0;
+        }
+
+
+        .experience p,
+        .resources ul {
+            font-size: 16px;
+            color: white
+        }
+
+
+        .experience a {
+            color: white;
+            text-decoration: underline
+        }
+
+
+        .image img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+
+        .resources ul {
+            list-style-type: none;
+            padding: 0;
+
+
+        }
+
+
+        .resources li {
+            margin-bottom: 15px;
+        }
+
+
+        .resources a {
+            color: white;
+            text-decoration: none;
+
+
+        }
+
+
+        .resources a:hover {
+            text-decoration: underline;
+        }
+
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #88b7dc;
+            font-size: 25px;
+            color: white
+        }
+
+
+        footer {
+            background: #86b6dd;
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+            font-size: 13px;
+        }
+
+        footer iframe {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="nav-left">  <a href="Homepage.HTML" style="text-decoration: none; color: white; font-size: 30px; font-weight: bold;">
+            Prabhav Kanneganti
+        </a>
+        </div>
+        <div class="nav-right">
+            <a href="Contact.HTML">Contact</a>
+            <a href="Athletics.html">Athletics</a>
+            <a href="Projects.HTML">Projects and Technology</a>
+            <a href="Resume.HTML">Resume</a>
+
+           <!--  <div class="dropdown">
+                <a href="Resources.HTML">Resources</a>
+            </div> -->
+             <!-- Resources tab with dropdown -->
+            <div class="dropdown">
+                <a class="active-link" href="#">Resources</a>
+                <div class="dropdown-content">
+                    <a href="#">Internships</a>
+                </div>
+            </div>
+            <a href="mailto:pkanneganti08@gmail.com">📧</a>
+            <a href="https://www.linkedin.com/in/prabhavkanneganti/"><b>in</b></a>
+
+            </nav>
+    </header>
+    <section class="hero">
+        <img src="google.png" alt="no images" class="google-logo">
+        <div>
+            <h1>Internships</h1>
+          <b >  <p>A resource for all students looking to intern for STEM-E Youth Career Development Program, BUILDING-U and more for students....by students</p>
+          </b>  </div>
+    </section>
+    <section class="top-section">
+        <div class="experience">
+            <h2>My Experience</h2>
+            <p> I am interning for STEM-E remotely as a programmer / digital product developer and building a new app to automate their volunteer and intership onboarding . </p>
+            <p><a> Hope to intern for Google one day!! </a></p>
+        </div>
+        <div class="image">
+            <img src="STEM-E.jpeg" alt="">
+            <img src="STEM-E logo1.jpg" alt="">
+            <img src="github-mark-white.png" alt="">
+        </div>
+        <div class="resources">
+            <h2>Helpful Resources</h2>
+            <details close>
+                <summary>Getting the internship</summary>
+                <div class="accordion-content">
+                         <ul>
+                         <li><a href="https://www.steme.org/internship">STEM-E Internship</a></li>
+                         <li><a href="https://building-u.com/">Building-U Internship and Opportunities </a></li>
+                         <li><a href="https://www.extern.com/post/best-websites-to-find-internships/">Best-websites-to-find-internships</a></li>
+                         <li><a href="https://joinhandshake.com/employers/?mrasn=1333006.1652089.jeZ4pkHe/">Join Hand Shake</a></li>
+                            <a    
+                             These websites guide on how to getting an Internship
+                            </a>
+                        </ul>
+                </div>
+            </details>
+        </div>
+    </section>
+    <div>
+        <footer class="footer">
+            <p><b>Prabhav Kanneganti</b></p>
+            <p><u><i style="font-size: 15px;">Current song on repeat:</i></u></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hwBySTM4Ngs?si=Ab7Xd9zLx2xMJw-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </footer>
+    </div>
+</body>
+
+
+</html>

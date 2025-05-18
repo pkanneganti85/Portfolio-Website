@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: steelblue;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px 0 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.left{
+    width: 45%;
+}
+.left h1{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+.left p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+line-height: 1.6;
+}
+.left small{
+    font-weight: normal;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.left a{
+    color: white;
+    text-decoration: underline;
+    display: block;
+    margin-top: 20px;
+}
+.right{
+    width: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+input, textarea
+{
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    width: 90%;
+    font-size: 12px;
+}
+.checkbox-group{
+    background-color: steelblue;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+.checkbox-group label{
+    display: flex;
+    font-weight: center;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+.checkbox-group input[type="checkbox"]{
+margin-right: 10px;
+width: 10px;
+height: 10px;
+}
+button{
+    width: 12%;
+    padding: 15px;
+    background-color: white;
+    color: steelblue;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+footer
+{
+    background-color: lightsteelblue;
+    padding: 30px;
+    text-align: center;
+}
+.social-icons{
+    margin-top: 20px;
+    font-size: 18px;
+}
+footer a{
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 13px;
+}
+iframe{
+    margin-top: 10px;
+}
+h3{
+    margin: 20px 0 10px 0;
+}

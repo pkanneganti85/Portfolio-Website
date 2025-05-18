@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhav Kanneganti</title>
+    <style>
+      
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: steelblue;
+         
+            color: white;
+  
+            line-height: 1.6;
+        }
+
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        header strong {
+            font-size: 24px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+           font-family: 'Times New Roman', Times, serif;
+        }
+
+        
+        nav a:hover::after,
+        nav a.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 2px;
+            background: white;
+        }
+
+   
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px;
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            min-width: 320px;
+            padding: 20px;
+        }
+
+     
+        .left h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .left p {
+            font-size: 14px;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        
+        .right label {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .right input[type="text"],
+        .right input[type="email"],
+        .right textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .right textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+      
+        .options {
+            margin-top: 10px;
+        }
+
+        .options label {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+
+        .options input[type="checkbox"] {
+            margin-right: 6px;
+            transform: scale(1.1);
+        
+        }
+
+        
+        button {
+            margin-top: 20px;
+            padding: 10px 30px;
+            font-size: 14px;
+            font-weight: bold;
+            background: white;
+            color: steelblue;
+            border: none;
+            cursor: pointer;
+        }
+
+     
+        footer {
+            background: lightsteelblue;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer iframe {
+            margin: 20px 0;
+        }
+
+        footer a {
+            color: steelblue;
+            font-weight: bold;
+        }
+
+        footer small,
+        footer p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <div> <a href="Homepage.HTML"
+                style="text-decoration: none;color: white;font-size: 30px;font-weight: bold;">Prabhav Kanneganti</a>
+        </div>
+        <nav>
+            <a href="Contact.HTML">Contact</a>
+            <a href="Athletics.html">Athletics</a>
+            <a href="Projects.HTML">Projects and Technology</a>
+            <a href="Resume.HTML">Resume</a>
+            <a href="Resources.HTML">Resources</a>
+            <a href="mailto:pkanneganti08@gmail.com">📧</a>
+            <a href="https://www.linkedin.com/in/prabhavkanneganti/"><b>in</b></a>
+
+
+        </nav>
+    </header>
+ 
+    <div class="container">
+      
+        <div class="left">
+            <h1>Contact me!</h1>
+            <p><strong>Have any questions? Fill out the form and I’ll get you a
+                    response soon!</strong></p>
+            <p>Feel free to ask / inquire about anything (school, sports,
+                internships, music, etc). Hoping to be a resource and be of help in your journey
+                in any way possible.</p>
+            <p>Similarly, please use this form or email directly me if your message
+                regards a NIL opportunity.</p>
+            <p><a href="mailto:pkanneganti08@gmail.com">pkanneganti08@gmail.com</a>
+            </p>
+        </div>
+
+        
+        <div class="right">
+            <label for="fname">Name <small>(required):</small></label>
+            <input type="text" id="fname" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+
+            <label for="email">Email <small>(required):</small></label>
+            <input type="email" id="email" placeholder="Email address">
+            <br>
+
+            <label for="gender">Gender:</label>
+            <label>
+                <input type="radio" name="Gender" value="HTML"> Male
+            </label>
+            <label>
+                <input type="radio" name="Gender" value="HTML"> Female
+            </label><br>
+            <label for="Skill">Skills:</label>
+
+            <label>
+                <input type="checkbox" name="skill" value="HTML"> HTML
+            </label>
+            <label>
+                <input type="checkbox" name="skill" value="C++"> C++
+            </label>
+            <label>
+                <input type="checkbox" name="skill" value="JAVA"> JAVA
+            </label>
+            <label>
+                <input type="checkbox" name="skill" value="JAVA"> PYTHON
+            </label>
+            <label>
+                <input type="checkbox" name="skill" value="JAVA"> CSS
+            </label>
+            <br>
+            <label FOR="Language">Languages known:</label>
+            <select id="language" name="languages" multiples>
+                <option value="english">English</option>
+                <option value="french">French</option>
+                <option value="Tamil">Tamil</option>
+                <option value="spanish">Spanish</option>
+            </select><br><br>
+            <label for="Message">Message:</label>
+            <textarea id="textarea" name="message" rows="10" cols="50"
+                placeholder="your message will be displayed here. . .">
+
+</textarea>
+
+             
+            <button onclick="alert('Form submitted')">Send</button>
+        </div>
+    </div>
+
+   
+    <footer>
+        <p><strong>Prabhav Kanneganti</strong></p>
+        <p><em><small><u>Current song on repeat</u></small></em></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hwBySTM4Ngs?si=Ab7Xd9zLx2xMJw-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </footer>
+
+    </footer>
+
+</body>
+
+</html>
